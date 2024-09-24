@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio do Instagram</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonte do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" />
+    <!-- SEO Básico -->
+    <meta name="description" content="Bio do Instagram de [Seu Nome]. Desenvolvedor, Designer e Criador de Soluções.">
+    <meta name="keywords" content="Desenvolvedor, Designer, Portfólio, Bio, Instagram, TikTok, WhatsApp">
+</head>
+<body>
+    
+
+
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-container">
+            <img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/37a0229b436e36a2c997b02a0244627b~c5_720x720.jpeg?lk3s=a5d48078&nonce=8416&refresh_token=6da661fba931d7693297a3d422f3ce02&x-expires=1727294400&x-signature=l2cieygi%2BU6w%2B9CzKT0rJ6YEQQY%3D&shp=a5d48078&shcp=81f88b70" alt="Foto de Perfil" class="profile-pic">
+            <h1>José Estevão</h1>
+            <p>Apresentações e Contatos nas Redes Sociais</p>
+            <!-- Botão de Mute/Unmute -->
+            <button id="mute-button" aria-label="Mute Music">
+                <i class="fas fa-volume-up"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou José Estêvão, nascido em 31 de outubro de 2007, na cidade de Araruna, no Estado do Paraná, onde resido na zona rural. Desde 2023, sou estudante do Colégio Agrícola de Campo Mourão, focado no aprendizado na área agropecuária. Além disso, estou ampliando meus conhecimentos na área de programação, especialmente em HTML e CSS, dado o crescente interesse por essas habilidades no mercado de trabalho. Abaixo, encontram-se as minhas redes sociais e informações de contato, acessíveis através dos botões apresentados. </p>
+        </div>
+    </section>
+
+    <!-- Seção Links -->
+    <section id="links">
+        <div class="container">
+            <h2>Meus Links</h2>
+            <div class="links-grid">
+                <a href="https://www.instagram.com/joseestevaodea" target="_blank" class="btn"><i class="fab fa-instagram"></i> Instagram 1</a>
+                <a href="https://www.instagram.com/jose_leblanc_rp" target="_blank" class="btn"><i class="fab fa-instagram"></i> Instagram 2</a>
+                <a href="https://www.instagram.com/titan_99_red" target="_blank" class="btn"><i class="fab fa-instagram"></i> Instagram 3</a>
+                <a href="https://www.tiktok.com/@joseestevaodea?" target="_blank" class="btn"><i class="fab fa-tiktok"></i> TikTok</a>
+                <a href="https://wa.me/+5544988068858" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://github.com/joseleblanc" target="_blank" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://open.spotify.com/playlist/2asvS1zuuc0dQTIemxMoIS?si=6d5a313d46274672" target="_blank" class="btn"><i class="fab fa-spotify"></i> Spotify</a>
+                <a href="https://www.youtube.com/@LEBLANCRP" target="_blank" class="btn"><i class="fab fa-youtube"></i> youtube</a>
+                <a href="https://www.linkedin.com/in/josé-estevão-de-araujo-campos-788214312/" target="_blank" class="btn"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <!-- Adicione mais links conforme necessário -->
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <!-- Conteúdo da seção sobre -->
+    </section>
+    <section id="links">
+        <!-- Conteúdo da seção links -->
+    </section>
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 JOSE ESTEVAO. Todos os direitos reservados.</p>
+    </footer>
+<script>
+    // Suaviza a rolagem ao clicar em links de âncoras
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault(); // Impede o comportamento padrão do link
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth' // Rolagem suave
+            });
+        });
+    });
+</script>
+
+   
+</body>
+</html>
